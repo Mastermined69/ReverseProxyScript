@@ -1,11 +1,11 @@
 #!/bin/bash
 
 sleep 3
-echo "---------------------------------------------------"
+echo "-------------------------------------"
 echo "ReverseProxy Script"
 echo "By Mastermined"
 echo "https://github.com/Mastermined69/ReverseProxyScript"
-echo "----------------------------------------------------"
+echo "--------------------------------------"
 
 read -p "What domain do you want to proxy (not by URL): " $proxydomain
 echo "$proxydomain is about to get proxied, if it isn't right do CTRL+C. You have 5 seconds"

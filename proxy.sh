@@ -21,7 +21,7 @@ cd /etc/nginx/sites-available
 sudo wget -O /etc/nginx/sites-available/$configfile.conf https://raw.githubusercontent.com/Mastermined69/ReverseProxyScript/main/proxy.conf
 sleep 8
 sed -s 's%PASS%'http://$serverdomain'%g' /etc/nginx/sites-available/$configfile.conf
-sed -s 's/DOMAIN/'$proxydomain'/g' /etc/nginx/sites-available/$configfile.conf
+sed -s 's/P_DOMAIN/'$proxydomain'/g' /etc/nginx/sites-available/$configfile.conf
 sudo nginx -t
 sudo nginx -s reload
 echo "Setting the link..."

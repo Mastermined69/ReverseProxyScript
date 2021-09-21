@@ -10,7 +10,7 @@ echo "--------------------------------------"
 read -p "What domain do you want to use to proxy. (Example: example.com): " $proxydomain
 echo "$proxydomain is about to get proxied, if it isn't right do CTRL+C. You have 5 seconds"
 sleep 5
-read -p "What is the servers domain (not by URL): " $serverdomain
+read -p "What is the domain/ip of the server you want to proxy. (Example: n7.example.com:123): " $serverdomain
 echo "$serverdomain is about to be used to proxy $proxydomain, if it ins't rught do CTRL+C. You have 5 seconds."
 read -p "What should be the name of the name of the config file: (Don't use .conf at the end and dont use the same name twice): " $configfile
 echo "Configuration file is ready to be setup, Setting up SSL certificates..."
@@ -24,9 +24,9 @@ sed -s 's%PASS%'http://$serverdomain'%g' /etc/nginx/sites-available/$configfile.
 sed -s 's/P_DOMAIN/'$proxydomain'/g' /etc/nginx/sites-available/$configfile.conf
 sudo nginx -t
 sudo nginx -s reload
-echo "Setting the link..."
+echo "Setting the link for nginx..."
 In -s /etc/nginx/sites-available/$configfile.conf /etc/nginx/sites-enabled
-echo "Proxy is setup, Restarting Nginx!"
+echo "Proxy is setup, Trying to restart nginx..."
 sleep 3
 systemctl restart nginx
 echo "If this doesnt work, please report it to the Github Repo!"

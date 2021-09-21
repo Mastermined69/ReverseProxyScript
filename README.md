@@ -15,6 +15,6 @@ https://www.copyrighted.com/work/P264Z03qvV69PYYo
 
 This repository is licensed under a GNU General Public License.
 
-#Note:
+# Note:
 
 The script hasn't been tested yet and README will be edited soon

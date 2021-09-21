@@ -5,7 +5,7 @@ This is a AutoReverseProxy script made personally by myself.
 
 # Requirements
 
-You need a **Virtual Private Server** with Ubuntu Operating System by latest version.
+You need a **Virtual Private Server** with Linux Operating System by latest version.
 
 # Copyright Certificate Of Registration
 

@@ -7,7 +7,7 @@ echo "By Mastermined"
 echo "https://github.com/Mastermined69/ReverseProxyScript"
 echo "--------------------------------------"
 
-read -p "What domain do you want to proxy (not by URL): " $proxydomain
+read -p "What domain do you want to use to proxy. (Example: example.com): " $proxydomain
 echo "$proxydomain is about to get proxied, if it isn't right do CTRL+C. You have 5 seconds"
 sleep 5
 read -p "What is the servers domain (not by URL): " $serverdomain
@@ -29,7 +29,7 @@ In -s /etc/nginx/sites-available/$configfile.conf /etc/nginx/sites-enabled
 echo "Proxy is setup, Restarting Nginx!"
 sleep 3
 systemctl restart nginx
-echo "If this goes not ok report the issue to the github repo"
+echo "If this doesnt work, please report it to the Github Repo!"
 sleep 3
 sudo nginx -t
-echo "If it says ok then the proxy is 100% setup, you may navigate to $proxydomain"
+echo "If it does say "ok", You can now navigate to $proxydomain if you have set everything up correctly."

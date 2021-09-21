@@ -13,7 +13,7 @@ https://www.copyrighted.com/work/P264Z03qvV69PYYo
 
 # License
 
-This repository is licensed
+This repository is licensed under a GNU General Public License.
 
 #Note:
 

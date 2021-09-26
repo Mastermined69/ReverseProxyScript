@@ -12,6 +12,7 @@ echo "$proxydomain is about to get proxied, if it isn't right do CTRL+C. You hav
 sleep 5
 read -p "What is the servers domain (not by URL): " $serverdomain
 echo "$serverdomain is about to be used to proxy $proxydomain, if it ins't rught do CTRL+C. You have 5 seconds."
+sleep 5
 read -p "What should be the name of the name of the config file: (Don't use .conf at the end and dont use the same name twice): " $configfile
 echo "Configuration file is ready to be setup, Setting up SSL certificates..."
 certbot certonly --nginx -d $proxydomain

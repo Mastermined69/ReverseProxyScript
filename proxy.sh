@@ -33,4 +33,4 @@ systemctl restart nginx
 echo "If this doesnt work, please report it to the Github Repo!"
 sleep 3
 sudo nginx -t
-echo "If it does say "ok", You can now navigate to $proxydomain if you have set everything up correctly."
+echo "If it does say ok, You can now navigate to $proxydomain if you have set everything up correctly."
